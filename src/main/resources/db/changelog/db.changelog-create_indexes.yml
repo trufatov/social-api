@@ -1,0 +1,29 @@
+databaseChangeLog:
+  - changeSet:
+      id: 004-add-indexes
+      author: tamer
+
+      changes:
+        - createIndex:
+            tableName: posts
+            indexName: idx_posts_author
+
+            columns:
+              - column:
+                  name: author_id
+
+        - createIndex:
+            tableName: posts
+            indexName: idx_posts_deleted
+
+            columns:
+              - column:
+                  name: deleted
+
+        - createIndex:
+            tableName: posts
+            indexName: idx_posts_created
+
+            columns:
+              - column:
+                  name: created_at

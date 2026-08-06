@@ -1,0 +1,21 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/db.changelog-create_users.yaml
+
+  - include:
+      file: db/changelog/db.changelog-create_posts.yml
+
+  - include:
+      file: db/changelog/db.changelog-create_post_likes.yml
+
+  - include:
+      file: db/changelog/db.changelog-create_indexes.yml
+
+  - include:
+      file: db/changelog/db.changelog-alter_users_password.yml
+
+  - include:
+      file: db/changelog/db.changelog-create_refresh_tokens.yml
+
+  - include:
+      file: db/changelog/db.changelog-create_revoked_access_tokens.yml
