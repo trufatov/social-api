@@ -199,6 +199,3 @@ src/main/resources/db/changelog/   Liquibase migrations
 src/test/                          Unit tests (Mockito + JUnit 5)
 ```
 
-## License
-
-MIT (or update as needed)
